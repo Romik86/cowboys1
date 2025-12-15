@@ -300,20 +300,26 @@ li, li * {
 ========================= */
 @media (max-width: 768px) {
 
-  .heroSwiper .swiper-slide > div.flex {
-    justify-content: flex-start !important;
-    padding-top: 140px;   /* was 120px */
-    padding-bottom: 80px; /* was 60px */
+  /* Center hero text vertically */
+  .heroSwiper .swiper-slide > div.absolute {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 100%;
   }
 
   .heroSwiper h1 {
-    margin-bottom: 28px; /* was 24px */
+    margin-bottom: 16px;
   }
 
   .heroSwiper p {
-    margin-top: 16px;    /* was 12px */
+    margin-top: 12px;
   }
 }
+
 
 
 /* =========================
@@ -331,7 +337,7 @@ li, li * {
   /* Scale images vertically */
   .heroSwiper img,
   .hero-image {
-    height: 105% !important;
+    height: 100% !important;
     width: 100%;
     object-fit: cover;
     object-position: center top;
@@ -365,7 +371,7 @@ li, li * {
 
       <!-- Slide 1 -->
       <div class="swiper-slide">
-     <img src="assets/images/hero12.jpg" class="w-full h-full object-cover sm:object-top">
+     <img src="assets/images/try1.jpg" class="w-full h-full object-cover object-center sm:object-top">
         <div class="absolute inset-0 bg-black opacity-40"></div>
         <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20">
           <h1 class="text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl mb-4 drop-shadow-lg"
@@ -384,7 +390,7 @@ li, li * {
 
       <!-- Slide 2 -->
       <div class="swiper-slide">
-        <img src="assets/images/banner1.jpg" class="w-full h-full object-cover">
+        <img src="assets/images/try2.jpg" class="w-full h-full object-cover object-center sm:object-top">
         <div class="absolute inset-0 bg-black opacity-40"></div>
         <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20">
           <h1 class="text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl mb-4 drop-shadow-lg py-5"
@@ -408,7 +414,7 @@ li, li * {
 
     <!-- Slide 3 -->
 <div class="swiper-slide relative">
-          <img src="assets/images/ac_repair.jpg" class="w-full h-full object-cover">
+          <img src="assets/images/try3.jpg" class="w-full h-full object-cover">
 
   <div class="absolute inset-0 bg-black opacity-10"></div>
 
@@ -429,7 +435,7 @@ li, li * {
 
       <!-- Slide 4 -->
       <div class="swiper-slide">
-        <img src="assets/images/o.png" class="w-full h-full object-cover sm:object-top">
+        <img src="assets/images/try4.jpg" class="w-full h-full object-cover sm:object-top">
         <div class="absolute inset-0 bg-black opacity-40"></div>
         <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20">
           <h1 class="text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl mb-4 drop-shadow-lg"
@@ -1449,33 +1455,33 @@ li, li * {
       <!-- FAQ Item 1 -->
       <div class="faq-item flex flex-col bg-white border border-yellow-300 rounded-2xl px-6 py-4 cursor-pointer hover:border-yellow-400 hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
         <div class="flex justify-between items-center w-full">
-          <span class="text-gray-800 font-medium text-base sm:text-lg">How often should I service my HVAC?</span>
+          <span class="text-gray-800 font-medium text-base sm:text-lg">What is our service guarantee?</span>
           <span class="text-xl text-gray-600 ml-4 transition-transform duration-300">+</span>
         </div>
         <div class="faq-answer mt-3 text-gray-700 text-sm sm:text-base leading-relaxed text-left hidden">
-          You should service your HVAC at least twice a year to maintain optimal performance. Regular maintenance keeps your system efficient and prevents costly repairs.
+          We stand behind our work and are dedicated to providing you with the highest level of service. If you are not completely satisfied with the HVAC services we have provided, we will make it right. Your comfort and peace of mind are our top priorities.
         </div>
       </div>
 
       <!-- FAQ Item 2 -->
       <div class="faq-item flex flex-col bg-white border border-yellow-300 rounded-2xl px-6 py-4 cursor-pointer hover:border-yellow-400 hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
         <div class="flex justify-between items-center w-full">
-          <span class="text-gray-800 font-medium text-base sm:text-lg">What is included in regular HVAC maintenance?</span>
+          <span class="text-gray-800 font-medium text-base sm:text-lg">How do we handle emergency service calls?</span>
           <span class="text-xl text-gray-600 ml-4 transition-transform duration-300">+</span>
         </div>
         <div class="faq-answer mt-3 text-gray-700 text-sm sm:text-base leading-relaxed text-left hidden">
-          Regular HVAC maintenance includes cleaning, inspection, filter replacement, and system performance checks to prevent breakdowns.
+          When you are facing an HVAC emergency, you can count on us to be there for you. Our team is available 24/7 to respond to emergency service calls. We understand the urgency of such situations and will work swiftly to restore comfort to your home or business.
         </div>
       </div>
 
       <!-- FAQ Item 3 -->
       <div class="faq-item flex flex-col bg-white border border-yellow-300 rounded-2xl px-6 py-4 cursor-pointer hover:border-yellow-400 hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
         <div class="flex justify-between items-center w-full">
-          <span class="text-gray-800 font-medium text-base sm:text-lg">How quickly can you respond to emergency repairs?</span>
+          <span class="text-gray-800 font-medium text-base sm:text-lg">What maintenance plans do we offer?</span>
           <span class="text-xl text-gray-600 ml-4 transition-transform duration-300">+</span>
         </div>
         <div class="faq-answer mt-3 text-gray-700 text-sm sm:text-base leading-relaxed text-left hidden">
-          Our team typically responds within 24 hours for emergency HVAC repairs to restore comfort quickly.
+          We offer comprehensive maintenance plans to keep your HVAC systems running efficiently year-round. Our plans are designed to prolong the life of your equipment, minimize the risk of unexpected breakdowns, and optimize energy efficiency. Regular maintenance helps save you money on costly repairs and ensures your indoor comfort.
         </div>
       </div>
 
