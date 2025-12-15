@@ -40,17 +40,28 @@
       border: 12px solid rgba(255,255,255,0.92);
     }
 
-    @media (min-width: 841px) {
+ /* Desktop nav ONLY above 1176px */
+@media (min-width: 1177px) {
   #menuBtn {
     display: none;
   }
-}
 
-@media (min-width: 841px) {
   #desktopNav {
     display: flex;
   }
 }
+
+/* Mobile nav up to 1176px */
+@media (max-width: 1176px) {
+  #desktopNav {
+    display: none;
+  }
+
+  #menuBtn {
+    display: block;
+  }
+}
+
 
 /* Mobile Menu Animations */
 #mobileMenu {
